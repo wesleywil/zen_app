@@ -12,6 +12,50 @@
   animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.meditate_cls {
+  background: linear-gradient(180deg, #0f766e, #164e63, #99f6e4, #f7fee7);
+  background-size: 800% 800%;
+  color: transparent;
+  -webkit-text-stroke: 2px #164e63;
+  -webkit-animation: meditate_colors 15s ease-in-out infinite;
+  -moz-animation: meditate_colors 15s ease-in-out infinite;
+  animation: meditate_colors 15s ease-in-out infinite;
+}
+
+@-webkit-keyframes meditate_colors {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes meditate_colors {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes meditate_colors {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
 /* Meditate Page */
 
 .base-timer {
