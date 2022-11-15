@@ -25,3 +25,7 @@ dist-ssr
 
 # Colors that will be used in the app
 colors_reference.txt
+
+#  No musics
+src/assets/musics
+src/assets/musics/*
