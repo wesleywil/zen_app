@@ -9,7 +9,7 @@ const RestartTimer = () => {
 
   const animate = () => {
     const element = document.getElementById("test");
-    element?.classList.toggle("meditate_cls");
+    element?.classList.remove("meditate_cls");
   };
 
   const reset = () => {
