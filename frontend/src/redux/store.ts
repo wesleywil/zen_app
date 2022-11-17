@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import meditationReducer from "./meditation/meditation";
+import trackReducer from "./track/track";
 
 export const store = configureStore({
   reducer: {
     meditation: meditationReducer,
+    track: trackReducer,
   },
 });
 

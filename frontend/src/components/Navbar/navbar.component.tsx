@@ -13,7 +13,9 @@ const Navbar = () => {
           <NavLink to="/meditation" className="mr-5 hover:text-gray-900">
             Meditation
           </NavLink>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
+          <NavLink to="/track" className="mr-5 hover:text-gray-900">
+            Track
+          </NavLink>
           <a className="hover:text-gray-900">Fourth Link</a>
         </nav>
         <NavLink

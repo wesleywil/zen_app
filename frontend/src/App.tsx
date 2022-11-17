@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Pages
 import Homepage from "./pages/homepage/homepage";
 import Meditation from "./pages/meditation/meditation";
+import Track from "./pages/track/track";
 
 // Components
 import Navbar from "./components/Navbar/navbar.component";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/meditation" element={<Meditation />} />
+          <Route path="/track" element={<Track />} />
         </Routes>
       </div>
     </BrowserRouter>
