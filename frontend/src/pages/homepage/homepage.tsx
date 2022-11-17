@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import Logo from "../../assets/LotusLogo.svg";
 
 const Homepage = () => {
@@ -18,9 +20,12 @@ const Homepage = () => {
           alt="zen logo"
           className="rounded-full meditate mx-auto w-1/2 xl:w-full md:w-full"
         />
-        <button className="text-lime-50 rounded-xl bg-teal-700 hover:bg-cyan-900 w-1/3 mx-auto mt-4 py-2 font-bold transition duration-700	ease-in-out	">
+        <NavLink
+          to="meditation"
+          className="text-center text-lime-50 rounded-xl bg-teal-700 hover:bg-cyan-900 w-1/3 mx-auto mt-4 py-2 font-bold transition duration-700	ease-in-out	"
+        >
           MEDIDATE
-        </button>
+        </NavLink>
       </div>
     </div>
   );
