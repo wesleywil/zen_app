@@ -6,7 +6,7 @@ A meditation app for calming the soul in this busy world.
 
 **Frontend:** Typescript, Reactjs, React-Redux, Redux-Toolkit, Tailwind, DaisyUI
 
-**Backend:** Python, Django, Django-Rest-Framework, SQLITE(for now) - I still thinking if I'm going to use this as backend.
+**Backend:** Node, Express, NextJs, Prisma, SQLite
 
 ## Created By
 
@@ -18,15 +18,11 @@ All commands are run from the root of the project, from a terminal:
 
 ### Backend
 
-| Command                            | Action                              |
-| :--------------------------------- | :---------------------------------- |
-| `python3 -m venv env`              | Create a virtual enviropment        |
-| `source env/bin/activate`          | activate virtual enviropment(LINUX) |
-| `pip install -r requirements.txt`  | install dependencies                |
-| `python manage.py makemigrations`  | makemigrations                      |
-| `python manage.py migrate`         | migrate                             |
-| `python manage.py createsuperuser` | create super user to admin options  |
-| `python manage.py runserver`       | run server                          |
+| Command                              | Action                                      |
+| :----------------------------------- | :------------------------------------------ |
+| `npm install`                        | Installs dependencies                       |
+| `npx prisma migrate dev --name init` | Create and seed the database(backend)       |
+| `npm run dev`                        | Starts local dev server at `localhost:8000` |
 
 ### Frontend
 
