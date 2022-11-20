@@ -2,5 +2,6 @@ node_modules/
 dist/
 *.env*
 
-# Migrations
+# Migrations and Database
+prisma/dev.db
 prisma/migrations
