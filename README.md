@@ -32,3 +32,17 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`     | Starts local dev server at `localhost:5000`  |
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
+
+## Screenshots
+
+#### Homepage
+
+![Homepage](https://i.imgur.com/7wHnUrC.png)
+
+#### Meditation
+
+![Meditation](https://i.imgur.com/LXGyVtk.png)
+
+#### Track
+
+![Track](https://i.imgur.com/MjFXdhj.png)
