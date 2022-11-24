@@ -29,3 +29,6 @@ colors_reference.txt
 #  No musics
 src/assets/musics
 src/assets/musics/*
+
+# Test Page
+src/pages/test.tsx
