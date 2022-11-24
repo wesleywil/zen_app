@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage";
 import Meditation from "./pages/meditation/meditation";
 import Track from "./pages/track/track";
+import XP from "./pages/test";
 
 // Components
 import Navbar from "./components/Navbar/navbar.component";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/meditation" element={<Meditation />} />
           <Route path="/track" element={<Track />} />
+          <Route path="/test" element={<XP />} />
         </Routes>
       </div>
     </BrowserRouter>

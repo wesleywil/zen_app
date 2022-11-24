@@ -2,8 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../redux/store";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
-import { addToMonth } from "../../redux/track/track";
-
 import PlaySong from "../../components/PlaySong/playsong.component";
 import RestartTimer from "../../components/RestartTimer/restartTimer.component";
 import TimerGroup from "../../components/TimerGroup/timerGroup.component";
@@ -14,7 +12,6 @@ const Meditation = () => {
   const isPlaying = useSelector(
     (state: RootState) => state.meditation.isPlaying
   );
-  const track = useSelector((state: RootState) => state.track.listTrack);
   const duration = useSelector((state: RootState) => state.meditation.duration);
   const dispatch = useDispatch();
 
@@ -23,12 +20,6 @@ const Meditation = () => {
       <h1 className=" text-center  text-4xl sm:text-6xl font-bold text-teal-700">
         MEDITATION
       </h1>
-      <div className="flex gap-2 ">
-        {track.map((item) => (
-          <h1>{item.y}</h1>
-        ))}
-      </div>
-
       <TimerGroup />
       <div className="flex flex-col ">
         <div
@@ -43,7 +34,8 @@ const Meditation = () => {
               colors="#0f766e"
               size={300}
               onComplete={() => {
-                dispatch(addToMonth());
+                console.log("Nice meditation");
+                //  To add function to create new track day
               }}
             >
               {({ remainingTime }) => remainingTime}
