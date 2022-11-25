@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../redux/store";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { registerDay } from "../../redux/track/track";
 
 import PlaySong from "../../components/PlaySong/playsong.component";
 import RestartTimer from "../../components/RestartTimer/restartTimer.component";
@@ -35,7 +36,7 @@ const Meditation = () => {
               size={300}
               onComplete={() => {
                 console.log("Nice meditation");
-                //  To add function to create new track day
+                dispatch(registerDay());
               }}
             >
               {({ remainingTime }) => remainingTime}

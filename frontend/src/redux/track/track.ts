@@ -18,6 +18,18 @@ export const fetchTracks: any = createAsyncThunk("track/fetchAll", async () => {
   return res.data;
 });
 
+export const registerDay: any = createAsyncThunk(
+  "track/registerDay",
+  async () => {
+    const res = await axios.post("http://localhost:8000/track_day/", {
+      feeling: "good",
+      track: { connect: { id: 1 } },
+    });
+    console.log("Registered? ", res.data);
+    return res.data;
+  }
+);
+
 export const trackSlice = createSlice({
   name: "track",
   initialState,
